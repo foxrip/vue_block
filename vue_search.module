@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Implements hook_form_alter().
+ */
+function vue_search_theme() {
+  // $theme = [];
+  // $theme['vue_search_template'] = [
+  //   'template' => 'vue-search-template',
+  // ];
+  // return $theme;
+  return [
+   'vue_search_template' => [
+      'render element' => 'children',
+   ],
+  ];
+
+  // $theme = [];
+  //  $theme['vue_search_template'] = [
+  //   'template' => 'vue-search-template',
+  // ];
+  // return $theme;
+}

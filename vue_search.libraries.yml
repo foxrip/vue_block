@@ -1,0 +1,14 @@
+# global build of vue
+vuejs:
+  js:
+    https://unpkg.com/vue@3.3.4/dist/vue.global.js: { type: external }
+  css:
+    theme:
+      css/vuejs_app.css: {}
+
+# The js part of your app.
+vuejs_app:
+  js:
+    js/vuejs_app.js: { }
+  dependencies:
+  - vue_search/vuejs
