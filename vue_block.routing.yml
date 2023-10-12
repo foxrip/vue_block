@@ -1,0 +1,8 @@
+vue_block.example:
+  path: '/vue-block/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\vue_block\Controller\VueSearchController::build'
+  requirements:
+    _permission: 'access content'
+

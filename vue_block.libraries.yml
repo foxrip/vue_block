@@ -11,4 +11,4 @@ vuejs_app:
   js:
     js/vuejs_app.js: { }
   dependencies:
-  - vue_search/vuejs
+  - vue_block/vuejs

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\vue_search\Plugin\Block;
+namespace Drupal\vue_block\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 
@@ -20,10 +20,10 @@ class MyVueAppBlock extends BlockBase {
    */
   public function build() {
     return [
-      '#theme' => 'vue_search_template',
+      '#theme' => 'vue_block_template',
       '#attached' => [
         'library' => [
-          'vue_search/vuejs_app',
+          'vue_block/vuejs_app',
         ],
       ],
     ];

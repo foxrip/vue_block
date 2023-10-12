@@ -3,14 +3,14 @@
 /**
  * Implements hook_form_alter().
  */
-function vue_search_theme() {
+function vue_block_theme() {
   // $theme = [];
   // $theme['vue_search_template'] = [
   //   'template' => 'vue-search-template',
   // ];
   // return $theme;
   return [
-   'vue_search_template' => [
+   'vue_block_template' => [
       'render element' => 'children',
    ],
   ];

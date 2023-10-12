@@ -1,8 +1,0 @@
-vue_search.example:
-  path: '/vue-search/example'
-  defaults:
-    _title: 'Example'
-    _controller: '\Drupal\vue_search\Controller\VueSearchController::build'
-  requirements:
-    _permission: 'access content'
-

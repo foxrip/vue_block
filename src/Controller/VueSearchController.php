@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\vue_search\Controller;
+namespace Drupal\vue_block\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 
