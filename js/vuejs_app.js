@@ -1,12 +1,10 @@
+
 const app = Vue.createApp({
   data() {
     return {
-      message: "hello world!",
-      picked: null,
+      tags: JSON.parse(drupalSettings.filter.tags),
     }
   }
 });
-
 app.config.compilerOptions.delimiters = ['[[', ']]'];
-
 app.mount('#app');
