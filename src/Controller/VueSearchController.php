@@ -2,7 +2,9 @@
 
 namespace Drupal\vue_block\Controller;
 
+use Drupal\views\Views;
 use Drupal\Core\Controller\ControllerBase;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
  * Returns responses for vue_search routes.
@@ -10,16 +12,12 @@ use Drupal\Core\Controller\ControllerBase;
 class VueSearchController extends ControllerBase {
 
   /**
-   * Builds the response.
+   * Here we can retrieve the results using a view.
    */
-  public function build() {
-
-    $build['content'] = [
-      '#type' => 'item',
-      '#markup' => $this->t('It works!'),
-    ];
-
-    return $build;
+  public function response() {
+    // $view = Views::getView('my_view');
+    $response = [];
+    return new JsonResponse($response);
   }
 
 }

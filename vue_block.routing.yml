@@ -2,7 +2,7 @@ vue_block.example:
   path: '/vue-block/example'
   defaults:
     _title: 'Example'
-    _controller: '\Drupal\vue_block\Controller\VueSearchController::build'
+    _controller: '\Drupal\vue_block\Controller\VueSearchController::response'
   requirements:
     _permission: 'access content'
 

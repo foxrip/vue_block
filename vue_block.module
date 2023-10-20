@@ -4,20 +4,9 @@
  * Implements hook_form_alter().
  */
 function vue_block_theme() {
-  // $theme = [];
-  // $theme['vue_search_template'] = [
-  //   'template' => 'vue-search-template',
-  // ];
-  // return $theme;
   return [
    'vue_block_template' => [
       'render element' => 'children',
    ],
   ];
-
-  // $theme = [];
-  //  $theme['vue_search_template'] = [
-  //   'template' => 'vue-search-template',
-  // ];
-  // return $theme;
 }

@@ -1,7 +1,30 @@
 <div id="app" v-cloak>
+
   <h2>Filter</h2>
   <div v-for="(tag, index) in tags" :key="tag.id">
-    <input type="checkbox" :id="tag.id" :value="tag.name">
+    {# Bind the selection to selectedCheckbox #}
+    <input type="checkbox" :id="tag.id" :value="tag.id" v-model="selectedCheckbox">
     <label :for="tag.id">[[ tag.name ]]</label>
   </div>
+
+  <div v-if="results">
+    <h2>Results</h2>
+    <table class="views-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Title</th>
+          <th>Field Event</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="result in results" :key="result.name">
+          <td>[[ result.name ]]</td>
+          <td>[[ result.title ]]</td>
+          <td>[[ result.field_event ]]</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
+
