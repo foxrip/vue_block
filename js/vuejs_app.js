@@ -7,6 +7,18 @@ const app = Vue.createApp({
       selectedCheckbox: [],
       // This variable will store the results.
       results: null,
+      // Slide range variables.
+      // // Price slide range min.
+      // min: 0,
+      // // Price slide range max.
+      // max: 1000,
+      // // Default price slide range min.
+      // minPrice: 0,
+      // // Default price slide range max.
+      // maxPrice: 1000,
+      // // Tags selected by range slider "id".
+      // selectedTags: [],
+      // End slide range variables.
     }
   },
   watch: {
@@ -39,6 +51,19 @@ const app = Vue.createApp({
           console.error('Error fetching data:', error);
         });
     },
+    // Method Update Range Slide
+    // updateRange() {
+    //   if (this.minPrice > this.maxPrice - 20) {
+    //     this.minPrice = this.maxPrice - 20;
+    //   }
+
+    //   // Filter tags by "id" range.
+    //   this.selectedTags = this.tags.filter(tag => {
+    //     const tagId = parseFloat(tag.id); // Convert tag.id a number
+    //     return tagId >= this.minPrice && tagId <= this.maxPrice;
+    //   });
+    // },
+    // End Method Update Range Slide.
   },
 });
 

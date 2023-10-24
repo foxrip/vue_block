@@ -26,5 +26,26 @@
       </tbody>
     </table>
   </div>
+
+  {# EXAMPLE FOR SLIDE PRICE RANGE #}
+	{# <h1>Price Range Slider</h1>
+	<div class="range">
+		<div class="range-slider">
+			<span class="range-selected" :style="{ left: (minPrice / max * 100) + '%', right: (100 - (maxPrice / max * 100)) + '%' }"></span>
+		</div>
+		<div class="range-input">
+			<input class="min" type="range" v-model="minPrice" :min="min" :max="max" @input="updateRange"/>
+			<input class="max" type="range" v-model="maxPrice" :min="min" :max="max" @input="updateRange"/>
+		</div>
+	</div>
+	<p>Min Price: [[ minPrice ]]</p>
+	<p>Max Price: [[ maxPrice ]]</p>
+
+	<h2>Filter</h2>
+	<div v-for="tag in selectedTags" :key="tag.id">
+		<label :for="tag.id">[[ tag.name ]]</label>
+		<label :for="tag.id">[[ tag.id ]]</label>
+	</div> #}
+  {# FIN EXAMPLE FOR SLIDE PRICE RANGE #}
 </div>
 
