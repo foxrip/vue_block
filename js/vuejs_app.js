@@ -19,6 +19,8 @@ const app = Vue.createApp({
       // // Tags selected by range slider "id".
       // selectedTags: [],
       // End slide range variables.
+      // Variable filter by name.
+      // name: '',
     }
   },
   watch: {
@@ -27,6 +29,11 @@ const app = Vue.createApp({
       handler: 'fetchData',
       deep: true,
     },
+    // Name watch.
+    // name: 'updateName',
+    // Price range watchs.
+    // minPrice: 'updateRange',
+    // maxPrice: 'updateRange'
   },
   methods: {
     fetchData() {
@@ -64,6 +71,26 @@ const app = Vue.createApp({
     //   });
     // },
     // End Method Update Range Slide.
+    // Method Filter By Name.
+    // updateName() {
+    //   this.selectedTags = this.selectedTags.filter(tag => {
+    //     return tag.name.toLowerCase().includes(this.name.toLowerCase());
+    //   });
+    // },
+    // End Method Filter By Name.
+    // Method for apply filters.
+    // applyFilters() {
+    //   this.updateRange();
+    //   this.updateName();
+    //   this.buildURL();
+    // },
+    // End method for apply filters.
+    // Build URL.
+    // buildURL() {
+    //   const url = '/jsonsearch?filter_name='+this.name+'&filter_range='+this.minPrice+'-'+this.maxPrice;
+    //   window.history.pushState(null, null, url);
+    // },
+    // End build URL.
   },
 });
 
